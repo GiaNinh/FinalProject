@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProjectCuoiKhoa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bgr-img">
+      <table>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>HOME</td>
+            <td>|</td>
+            <td>CONNECT</td>
+            <td>|</td>
+            <td id="signin" class="si">SIGN IN</td>
+            <td>|</td>
+            <td id="signup" class="si">SIGN UP</td>
+            <td>|</td>
+            <td>DOWNLOAD</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </header>
+    <div id="md_si" class="contain_modal_si">
+      <div class="modal_si animate">
+        <form>
+          <span class="close" onclick="document.getElementById('md_si').style.display='none'">&times;</span>
+          <label for="name_si">Name/Email</label>
+          <input id="name_si" placeholder="Enter Your Username/Email" type="text" required>
+          <label for="pass_si">Password</label>
+          <input id="pass_si" type="password" placeholder="Enter Your Password" required>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+    </div>
+    <div id="md_su" class="contain_modal_su">
+      <div class="modal_su animate">
+        <form onsubmit=" registerNewUser();"> 
+          <span class="close" onclick="document.getElementById('md_su').style.display='none'">&times;</span>
+          <label for="name_su">Name/Email</label>
+          <input id="name_su" placeholder="Enter Your Username/Email" type="text" required>
+          <label for="pass_su">Password</label>
+          <input id="pass_su" type="password" placeholder="Enter Your Password" required>
+          <label for="re_pass">Repeat Password</label>
+          <input id="re_pass" placeholder="Repeat Your Password" type="password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="ORI_product">
+        <div class="ORI_header">
+            <p>Ori and the Will of the Wisps</p>
+        </div>
+
+        <div class="ORI_body">
+            <div class="ORI_PV">
+                <p>Ori and the Will of the Wisps là một trò chơi video Metroidvania phiêu lưu nền tảng năm 2020 được phát triển bởi Moon Studios và được xuất bản bởi Xbox Game Studios.</p>
+                <p><span>Ngày phát hành ban đầu:</span> 2020</p>
+                <p><span>Nhà xuất bản:</span> Xbox Game Studios</p>
+                <p><span>Loạt trò chơi:</span> Ori</p>
+                <p><span>Nhà phát triển:</span> Moon Studios</p>
+                <p><span>Giải thưởng:</span> Giải thưởng Video Game của Viện Hàn lâm Anh quốc cho Game bền vững,...</p>
+                <p><span>Những người thiết kế:</span> Chris McEntee</p>
+                <p><span>Thể loại:</span> Metroidvania, Trò chơi điện tử đối kháng, Trò chơi bắn súng</p>
+            </div>
+            <div class="ORI_Video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/kd0zbNw1VOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <hr>
+      <br>
+      <h3>Trải nghiệm chơi game thật sự sống động</h3>
+      <br>
+      <p>>©Copyright 2050 by nobody. All rights reserved.</p>
+      <br>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+      <hr>
+    </footer>
+
+    <script src="signin.js"></script>
+    <script src="buttontop.js"></script>
+    <script src="localstorage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProjectCuoiKhoa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bgr-img">
+      <table>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>HOME</td>
+            <td>|</td>
+            <td>CONNECT</td>
+            <td>|</td>
+            <td id="signin" class="si">SIGN IN</td>
+            <td>|</td>
+            <td id="signup" class="si">SIGN UP</td>
+            <td>|</td>
+            <td>DOWNLOAD</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </header>
+    <div id="md_si" class="contain_modal_si">
+      <div class="modal_si animate">
+        <form>
+          <span class="close" onclick="document.getElementById('md_si').style.display='none'">&times;</span>
+          <label for="name_si">Name/Email</label>
+          <input id="name_si" placeholder="Enter Your Username/Email" type="text" required>
+          <label for="pass_si">Password</label>
+          <input id="pass_si" type="password" placeholder="Enter Your Password" required>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+    </div>
+    <div id="md_su" class="contain_modal_su">
+      <div class="modal_su animate">
+        <form onsubmit=" registerNewUser();"> 
+          <span class="close" onclick="document.getElementById('md_su').style.display='none'">&times;</span>
+          <label for="name_su">Name/Email</label>
+          <input id="name_su" placeholder="Enter Your Username/Email" type="text" required>
+          <label for="pass_su">Password</label>
+          <input id="pass_su" type="password" placeholder="Enter Your Password" required>
+          <label for="re_pass">Repeat Password</label>
+          <input id="re_pass" placeholder="Repeat Your Password" type="password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="LOL_product">
+        <div class="LOL_header">
+            <p>League of Legends</p>
+        </div>
+
+        <div class="LOL_body">
+            <div class="LOL_PV">
+                <p>Liên Minh Huyền Thoại là một trò chơi video thể loại đấu trường trận chiến trực tuyến nhiều người chơi được Riot Games phát triển và phát hành trên nền tảng Windows và MacOS, lấy cảm hứng từ bản mod Defense of the Ancients cho trò chơi video Warcraft III: Frozen Throne.</p>
+                <p><span>Ngày phát hành ban đầu:</span> 27 tháng 10, 2009</p>
+                <p><span>Nhà xuất bản:</span> Riot Games</p>
+                <p><span>Chế độ:</span> Trò chơi điện tử nhiều người chơi</p>
+                <p><span>Nhà phát triển:</span> Riot Games</p>
+                <p><span>Giải thưởng:</span> Giải thưởng Video Game của Viện Hàn lâm Anh quốc cho Game bền vững,...</p>
+                <p><span>Những người thiết kế:</span> Christina Norman, Mark Yetter, Steve Feak, David Capurro, Tom Cadwell, Rob Garrett</p>
+                <p><span>Thể loại:</span> Đấu trường trận chiến trực tuyến nhiều người chơi, Trò chơi nhập vai hành động</p>
+            </div>
+            <div class="LOL_Video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IzMnCv_lPxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <hr>
+      <br>
+      <h3>Trải nghiệm chơi game thật sự sống động</h3>
+      <br>
+      <p>>©Copyright 2050 by nobody. All rights reserved.</p>
+      <br>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+      <hr>
+    </footer>
+
+    <script src="signin.js"></script>
+    <script src="buttontop.js"></script>
+    <script src="localstorage.js"></script>
+  </body>
+</html>
